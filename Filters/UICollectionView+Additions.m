@@ -7,6 +7,10 @@
 //
 
 #import "UICollectionView+Additions.h"
+static CGFloat kGeomMinimunInterItemSpacing = 5;
+static CGFloat kGeomSpaceCellPadding = 3;
+
+
 
 @implementation UICollectionView (Additions)
 
@@ -19,7 +23,7 @@
     collectionView.showsVerticalScrollIndicator = NO;
     collectionView.alwaysBounceHorizontal = NO;
     collectionView.allowsSelection = YES;
-    collectionView.backgroundColor = UIColorRGBA(kColorClear);
+    //collectionView.backgroundColor = UIColorRGBA(kColorClear);
     [view addSubview:collectionView];
     return collectionView;
 }

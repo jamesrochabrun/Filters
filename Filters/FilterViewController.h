@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  FilterViewController.h
 //  Filters
 //
 //  Created by James Rochabrun on 9/25/16.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface FilterViewController : UIViewController
 
 
 @end

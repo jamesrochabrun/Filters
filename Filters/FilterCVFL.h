@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FilterCVFL : UICollectionViewFlowLayout
+@interface FilterCVFL : UICollectionViewFlowLayout<UICollectionViewDelegateFlowLayout>
 
 @end

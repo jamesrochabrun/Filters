@@ -14,9 +14,9 @@
     
     UISlider *slider = [UISlider new];
     slider.minimumValue = minValue;
-    slider.minimumTrackTintColor = UIColorRGBA(minTrackTintColor);
+    slider.minimumTrackTintColor = [UIColor redColor];
     slider.maximumValue = maxValue;
-    slider.maximumTrackTintColor = UIColorRGBA(maxTrackTintColor);
+    slider.maximumTrackTintColor = [UIColor blueColor];
     slider.continuous = continuous;
     return slider;
 }

@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FilterView : UIView
+@interface FilterView : UIView<UICollectionViewDelegate, UICollectionViewDataSource>
+@property (nonatomic, strong) UICollectionView *collectionView;
+@property (nonatomic, strong) UICollectionViewFlowLayout *listLayout;
+
 
 @end

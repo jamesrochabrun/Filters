@@ -7,6 +7,9 @@
 //
 
 #import "FilterSettings.h"
+#import <UIKit/UIKit.h>
+static CGFloat kMaxDisplay = 100.0f;
+
 
 @implementation FilterSettings
 

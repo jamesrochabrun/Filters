@@ -22,7 +22,7 @@
     UILabel *l = [UILabel new];
     [view addSubview:l];
     l.text = text;
-    l.font = [UIFont fontWithName:kFontLatoRegular size:fontSize];
+//    l.font = [UIFont fontWithName:kFontLatoRegular size:fontSize];
     l.numberOfLines = 0;
     l.textAlignment = textAlignment;
     l.lineBreakMode = NSLineBreakByWordWrapping;
@@ -32,8 +32,8 @@
 
 - (void)withFont:(UIFont *)font textColor:(NSUInteger)color backgroundColor:(NSUInteger)backgroundColor {
     self.font = font;
-    self.textColor = UIColorRGBA(color);
-    self.backgroundColor = UIColorRGBA(backgroundColor);
+    self.textColor = [UIColor blackColor];
+//    self.backgroundColor = UIColorRGBA(backgroundColor);
     self.lineBreakMode = NSLineBreakByTruncatingTail;
 }
 
@@ -50,7 +50,7 @@
     [view addSubview:self];
     self.textAlignment = NSTextAlignmentCenter;
     self.text = text;
-    self.font = [UIFont fontWithName:kFontIcons size:fontSize];
+//    self.font = [UIFont fontWithName:kFontIcons size:fontSize];
 }
 
 
