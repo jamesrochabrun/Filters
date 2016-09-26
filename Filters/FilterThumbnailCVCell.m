@@ -19,6 +19,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         
+        self.backgroundColor = [UIColor whiteColor];
         _filterType = [UILabel new];
         [_filterType setTextColor:[UIColor blackColor]];
         [_filterType setTextAlignment:NSTextAlignmentCenter];
@@ -44,7 +45,6 @@
         [self addSubview:_editionType];
         [self addSubview:_selectedView];
         
-        //[DebugUtilities addBorderToViews:@[ self]];
     }
     return self;
 }
@@ -73,7 +73,7 @@
     frame.size.width = self.frame.size.width;
     frame.size.height = 6;
     frame.origin.x = 0;
-    frame.origin.y = CGRectGetMaxY(self.frame) - 6 +  2;
+    frame.origin.y = CGRectGetMaxY(self.frame) - 4;
     _selectedView.frame = frame;
 }
 
